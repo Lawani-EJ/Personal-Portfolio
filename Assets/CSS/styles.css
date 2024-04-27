@@ -9,7 +9,7 @@
     --color-base2: #022a30;
     --color-brand: #ACE1AF;
     --color-brand2: #deff58;
-    --sidbar-width: 240px;
+    --sidebar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
 
@@ -44,7 +44,27 @@ img {
     width: 100%;
 }
 
+.text-brand {
+    color: var(--color-brand);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Navigation-bar */
+
+.navbar {
+    background-color: var(--color-base);
+}
+
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
@@ -55,16 +75,61 @@ img {
     color: var(--color-brand);
 }
 
+/* the button */
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
-        width: var(--sidbar-width);
+        width: var(--sidebar-width);
         background: linear-gradient(rgba(3, 63, 71, 0.6), rgba(3, 63, 71, 0.6)), url(/Personal-Bootstrap-Portfolio/Assets/Images/sidebar.jpeg);
         background-size: cover;
         background-position: center;
     }
 
-                .navbar-brand img {
-                    border: 5px solid var(--color-brand);
-                }
+    .navbar-brand img {
+        border: 5px solid var(--color-brand);
+    }
+
+    /* selecting the content wrapper */
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
 }
