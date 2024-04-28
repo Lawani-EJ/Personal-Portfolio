@@ -6,79 +6,172 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- linking to the bootstrap css -->
-    <link rel="stylesheet" href="/Personal-Bootstrap-Portfolio/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="/Personal-Bootstrap-Portfolio/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
     <!-- link the aos-distribute css -->
-    <link rel="stylesheet" href="/Personal-Bootstrap-Portfolio/aos-master/dist/aos.css">
+    <link
+      rel="stylesheet"
+      href="/Personal-Bootstrap-Portfolio/aos-master/dist/aos.css"
+    />
     <!-- link the line awesome css -->
-    <link rel="stylesheet" href="/Personal-Bootstrap-Portfolio/line-awesome1.3.0/css/line-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="/Personal-Bootstrap-Portfolio/line-awesome1.3.0/css/line-awesome.min.css"
+    />
     <!-- link the general/normal css -->
-    <link rel="stylesheet" href="/Personal-Bootstrap-Portfolio/Assets/CSS/styles.css">
+    <link
+      rel="stylesheet"
+      href="/Personal-Bootstrap-Portfolio/Assets/CSS/styles.css"
+    />
     <title>ElyonJohn-Portfolio</title>
-</head>
-<body>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- bootstrap navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> 
-        <!-- For this navbar it indicates that the navbar will be expanded for large devices and remain collapsed for smaller devices, the dark will set the text to have a dark color  -->
-  <div class="container flex-lg-column">   
-    <a class="navbar-brand mx-lg-auto mb-lg-4" href="#"><span class="h3 fw-bold d-block d-lg-none">Elyon John</span>
-        <img src="/Personal-Bootstrap-Portfolio/Assets/Images/person1.jpeg" class="d-none d-lg-block rounded-circle" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Content-wrapper -->
-<div id="content-wrapper">
-    <!-- Home -->
-    <section id="home"  class="full-height px-lg-5">
-        <div class="contianer">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold">I'M A <span class="text-brand">FRONTEND DESIGNER</span> FROM, NIGERIA</h1>
-                    <P class="lead mt-2 mb-4">I'm a junior front-end software developer based in Abuja F.C.T Nigeria, and i'm on a passionate journey building and crafting digital experiences.</P>
-                    <a href="#" class="btn btn-brand me-4">Explore my Work</a>
-                    <a href="#" class="link-custom">call:123456789</a>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <!-- For this navbar it indicates that the navbar will be expanded for large devices and remain collapsed for smaller devices, the dark will set the text to have a dark color  -->
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#"
+          ><span class="h3 fw-bold d-block d-lg-none">Elyon John</span>
+          <img
+            src="/Personal-Bootstrap-Portfolio/Assets/Images/person1.jpeg"
+            class="d-none d-lg-block rounded-circle"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </section>
-</div>
+      </div>
+    </nav>
+
+    <!-- Content-wrapper -->
+    <div id="content-wrapper">
+      <!-- Home -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="contianer">
+          <div class="row">
+            <div class="col-lg-10">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
+                I'M A <span class="text-brand">FRONTEND DESIGNER</span> FROM,
+                NIGERIA
+              </h1>
+              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                I'm a junior front-end software developer based in Abuja F.C.T
+                Nigeria, and i'm on a passionate journey building and crafting
+                digital experiences.
+              </p>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#" class="btn btn-brand me-4">Explore my Work</a>
+                <a href="#" class="link-custom">call: (+234) 123456789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">SERVICES</h6>
+              <h1>Services That I Provide</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-feather"></i>
+                </div>
+                <h5 class="mt-4 mb-2">UX Designing</h5>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversion-focused
+                </p>
+                <a href="" class="link-custom">Read More.</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-pencil-ruler"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Branding</h5>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversion-focused
+                </p>
+                <a href="" class="link-custom">Read More.</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="las la-laptop-code"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Web-Designing</h5>
+                <p>
+                  I craft high-performing and delightful experiences tailored
+                  and conversion-focused
+                </p>
+                <a href="" class="link-custom">Read More.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+    </div>
+    <!-- Content-Wrapper -->
+
     <!-- link the bootstrap js -->
     <script src="/Personal-Bootstrap-Portfolio/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- link the aos (animate on scroll) js -->
     <script src="/Personal-Bootstrap-Portfolio/aos-master/dist/aos.js"></script>
     <!-- link the general/normal js -->
     <script src="/Personal-Bootstrap-Portfolio/Assets/JS/main.js"></script>
-</body>
+  </body>
 </html>
